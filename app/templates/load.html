@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<title>Ajax事件-调用</title>
+	<link rel="stylesheet" type="text/css" href="css/ceshi.css">
+	<script type="text/javascript" src="/static/js/jQuery.js"></script>
+	<script type="text/javascript" src="/static/js/jQuery.min.js"></script>
+</head>
+<body>
+<!-- 	<input type="button" id="send" value="Ajax获取" />
+	<div class="conment">已有评论：</div>
+	<div id="resText"></div> -->
+
+	<form id="form1" action="get1.php">
+		<p>评论：</p>
+		<p>姓名： <input type="text" name="username" id="username" /></p>
+		<p>内容： <textarea name="content" id="content" rows="2" cols="20"></textarea></p>
+		<p><input type="button" id="send" value="提交" /></p>
+	</form>
+	<div class="comment">已有评论：</div>
+	<div id="resText"></div>
+</body>
+
+<script type="text/javascript">
+	// $(function(){
+	// 	$("#send").click(function(){
+	// 		$.get("get1.php",$("form1").serialize(),function(data,textStatus){
+	// 			$("#resText").html(data);
+	// 		});
+	// 	});
+	// });
+	$(function(){
+		$("#send").click(function(){
+			$.get("get1.php",{
+				username: $("#username").val(),
+				content: $("#content").val()
+			},function(data,textStatus){
+				$("#resText").html(data);
+			});
+		});
+
+
+		<!--$.getJSON("/data/yapei?mid=824",function(data){-->
+            <!--$.each(data, function(i, field){-->
+            <!--});-->
+        <!--});-->
+
+		 $.ajax({
+ 	 	  url : '/data/yapei?mid=824&pageindex=10&num=30',
+ 	 	  //url:"http://miniapi.7654.com/mini/news/recommend",
+		   type : "get",
+	  datatype:'json',
+		   //jsonp : 'callback',
+		//   //jsonpCallback:"successCallback",
+     	 	error: function (XMLHttpRequest, textStatus, errorThrown) {
+                   alert("33333333333333333");
+                  alert(XMLHttpRequest.status);
+                  alert(XMLHttpRequest.readyState);
+                  alert(textStatus);
+                },
+           success: function (data) {
+
+
+
+          }
+
+  	 });
+
+	});
+
+	
+
+
+
+	// $(function(){
+	// 	$("#send").click(function(){
+	// 		$.get("get2.php",{
+	// 			username: $("#username").val(),
+	// 			content: $("#content").val()
+	// 		},function(data,textStatus){
+	// 			var username = $(data).find("comment").attr("username");
+	// 			var content = $(data).find("comment content").text();
+	// 			var testHtml = "<div class='comment'><h6>"+username+":</h6><p class='para'>"+content+"</p></div>"
+	// 			$("#resText").html(testHtml);
+	// 		});
+	// 	});
+	// });
+	// $(function(){
+	// 	$("#send").click(function(){
+	// 		$.get("get3.php",{
+	// 			username: $("#username").val(),
+	// 			content: $("#content").val()
+	// 		},function(data,textStatus){
+	// 			var username = data.username;
+	// 			var content = data.content
+	// 			var txtHtml = "<div class='comment'><h6>"+username+":</h6><p class='para'>"+content+"</p></div>"
+	// 			$("#resText").html(txtHtml);
+	// 		},"json");
+	// 	});
+	// });
+	// $(function(){
+	// 	$("#send").click(function(){
+	// 		$.post("post1.php",{
+	// 			username: $("#username").val(),
+	// 			content: $("#content").val()
+	// 		},function(data,textStatus){
+	// 			$("#resText").append(data);
+	// 		});
+	// 	});
+	// });
+	// $(function(){
+	// 	$("#send").click(function(){
+	// 		$("#resText").load("post1.php".{
+	// 			username: $("#username").val(),
+	// 			content: $("#content").val()
+	// 		});
+	// 	});
+	// });
+	// $(function(){
+	// 	$("#send").click(function(){
+	// 		$.getScript('test.js')
+	// 	});
+	// });
+
+</script>
+	
+</html>

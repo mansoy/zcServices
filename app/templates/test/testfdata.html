@@ -1,0 +1,184 @@
+{% extends "base.html" %}
+{% block head %}
+	{{ super() }}
+	<title>{%block title %}亚盘对比{% endblock %}</title>
+    <script src="{{url_for('static', filename='js/jquery.min.js')}}"></script>
+    <script>
+    $(document).ready(function(){
+      $("#addUser").click(function(){
+
+        $.getJSON("/data/yapei?mid=824",function(data){
+            $.each(data, function(i, field){
+            });
+        });
+
+        var $tr = $("<tr>"+
+        "<td>ManSoy</td>"+
+        "<td>zjw_0916@126.com</td>"+
+        "<td>13389220353</td>"+
+        "<td><a href='deleteEmp?id=ManSoy'>删除</a></td>"
+        +"</tr>");
+        var $table = $("#datatb");
+        $table.append($tr);
+        $tr.children().children().click(function(){
+            return deleteTr($tr);
+        });
+      });
+      function deleteTr(aObject) {
+        var flag = window.confirm("您确定要删除"+aObject.children(":first").text()+"名称的值吗？");
+        alert(flag);
+         if(!flag){
+          return false;
+         } else {
+          aObject.remove();
+          return false;
+         }
+        return false;
+      }
+    })
+    </script>
+{% endblock %}
+{% block bodystyle%}id="other_body"{% endblock %}
+{% block body %}
+    <input type="button" id="addUser" value="添加表格" onClick="CreateTable(5,6)" >
+	{{ super() }}
+	<div id="headline_other">
+		<div class="content">
+			<div class="left">
+				<h1>悉尼FC</h1>
+				<h4>上赛季澳超排名:7  赛前排名:1</h4>
+			</div>
+			<div class="middle">
+				<div class="xini">
+					<img src="/static/img/8.png">
+				</div>
+				<div class="score">
+					<h3>16/17澳超第16轮</h3>
+					<h4>上赛季澳超排名：7  赛前排名：1</h4>
+					<h1>2:0</h1>
+				</div>
+				<div class="adelai">
+					<img src="/static/img/9.png">
+				</div>
+			</div>
+			<div class="right">
+				<h1>阿德莱德联</h1>
+				<h4>赛前排名:9  上赛季澳超排名:1</h4>
+			</div>	
+		</div>
+	</div>
+	<div id="Schedule">
+		<div class="title">
+			<ul>
+				<li><a href="shujufenxi.html">数据分析</a></li>
+				<li>情报推荐</li>
+				<li>投注分析</li>
+				<li><a href="baijiaoupei.html">百家欧赔</a></li>
+				<li>让球指数</li>
+				<li class="Appoint"><a href="yapanduibi.html">亚盘对比</a></li>
+				<li>大小指数</li>
+				<li>比分指数</li>
+				<li>走势分析</li>
+				<li>技术统计</li>
+			</ul>
+		</div>
+		<div class="Foot">
+			<h6>竞足</h6>
+			<img src="/static/img/icon14.png">
+			<h6>单场</h6>
+			<img src="/static/img/icon14.png">
+		</div>
+	</div>
+	<div id="odds_content">
+		<div class="table_top">
+			<div class="odds_t">
+				<table width="1200" class="pub_table" cellspacing="0" cellpadding="0">
+					<colgroup>
+						<col width="82" />
+						<col width="194" />
+						<col width="288" />
+						<col width="116" />
+						<col width="288" />
+						<col width="116" />
+						<col width="116" />
+					</colgroup>
+					<tbody>
+						<tr class="odds_t_th" xls="header">
+							<th class="tb_bdr" style="border-left: 1px solid #6795ce;">筛选</th>
+							<th class="tb_bdr tb_plgs">
+								<div class="selt_box">
+									<span class="selt_t">
+										<em id="typeshow" val="1" row="1">全部公司</em>
+										<i class="selt_raw"></i>
+									</span>
+									<ul class="selt_list" id="choose" style="display: none;">
+										<li val="1">全部公司</li>
+										<li val="2">主流公司</li>
+										<li val="3">交易所</li>
+										<li val="4">非交易所</li>
+									</ul>
+								</div>
+							</th>
+							<th class="tb_bdr" row="3">即时盘口</th>
+							<th class="tb_bdr" row="1">变化时间</th>
+							<th class="tb_bdr" row="3">初始盘口</th>
+							<th class="tb_bdr" row="1">变化时间</th>
+							<th style="border-right: 1px solid #6795ce;">统计</th>
+						</tr>
+						<tr xls="header">
+							<th class="th_one">序号</th>
+							<th class="tb_plgs">
+								<span row="1">赔率公司</span>
+								<a class="btn_blue_1 btn_blue_1_h18" id="custonize_new" href="###"></a>
+							</th>
+							<th>
+								<table class="pl_table_data" cellspacing="0" cellpadding="0">
+									<tbody>
+										<tr>
+											<td width="58" row="1">水</td>
+											<td row="1">盘</td>
+											<td width="58" row="1">水</td>
+											<td width="58">更多</td>
+										</tr>
+									</tbody>
+								</table>
+							</th>
+							<th row="1"></th>
+							<th>
+								<table class="pl_table_data" cellspacing="0" cellpadding="0">
+									<tbody>
+										<tr>
+											<td width="58" row="1">水</td>
+											<td row="1">盘</td>
+											<td width="58" row="1">水</td>
+										</tr>
+									</tbody>
+								</table>
+							</th>
+							<th row="1"></th>
+							<th>
+								<a class="btn_blue_1 btn_blue_1_h24 btn_blue_w70 downpl" id="link492" href="###">赔率下载</a>
+							</th>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="table_cont" id="table_cont" style="padding-top: 0px;" >
+			<table width="1200" class="pub_table" id="datatb" border="0" cellspacing="0" cellpadding="0">
+				<colgroup>
+						<col width="82" />
+						<col width="194" />
+						<col width="288" />
+						<col width="116" />
+						<col width="288" />
+						<col width="116" />
+						<col width="116" />
+				</colgroup>
+				<tbody id="tbdata">
+					<!--在这里添加数据-->
+				</tbody>
+			</table>
+		</div>
+	</div>
+{% endblock %}

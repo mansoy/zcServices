@@ -1,0 +1,157 @@
+{% extends "dabase.html" %}
+{% block head %}
+	{{ super() }}
+    <title>{%block title %}百家欧赔{% endblock %}</title>
+{% endblock %}
+{% block bodystyle%}id="other_body"{% endblock %}
+{% block body %}
+	{{ super() }}
+	<div id="odds_content">
+		<div class="table_top">
+			<div class="odds_t">
+				<table width="1200" class="pub_table" cellspacing="0" cellpadding="0">
+					<colgroup>
+						<col width="82" />
+						<col width="194" />
+						<col width="220" />
+						<col width="242" />
+						<col width="116" />
+						<col width="220" />
+						<col width="116" />
+					</colgroup>
+					<tbody>
+						<tr class="odds_t_th" xls="header">
+							<th class="tb_bdr" style="border-left: 1px solid #6795ce;">筛选</th>
+							<th class="tb_bdr tb_plgs">
+								<div class="selt_box">
+									<span class="selt_t">
+										<em id="typeshow" val="1" row="1">全部公司</em>
+										<i class="selt_raw"></i>
+									</span>
+									<ul class="selt_list" id="choose" style="display: none;">
+										<li val="1">全部公司</li>
+										<li val="2">主流公司</li>
+										<li val="3">交易所</li>
+										<li val="4">非交易所</li>
+									</ul>
+								</div>
+							</th>
+							<th class="tb_bdr" row="3">即时欧赔(显示初盘)</th>
+							<th class="tb_bdr" row="1">即时概率(显示初盘)</th>
+							<th class="tb_bdr" row="3">返还率(显示初盘)</th>
+							<th class="tb_bdr" row="1">即时凯利(显示初盘)</th>
+							<th style="border-right: 1px solid #6795ce;">统计</th>
+						</tr>
+						<tr xls="header">
+							<th class="th_one">序号</th>
+							<th class="tb_plgs">
+								<span row="1">赔率公司</span>
+								<a class="btn_blue_1 btn_blue_1_h18" id="custonize_new" href="###"></a>
+							</th>
+							<th>
+								<table class="pl_table_data" cellspacing="0" cellpadding="0">
+									<tbody>
+										<tr>
+											<td width="58" row="1">胜</td>
+											<td row="1">平</td>
+											<td width="58" row="1">负</td>
+										</tr>
+									</tbody>
+								</table>
+							</th>
+							<th row="1">
+								<table class="pl_table_data" cellspacing="0" cellpadding="0">
+									<tbody>
+										<tr>
+											<td width="58" row="1">胜</td>
+											<td row="1">平</td>
+											<td width="58" row="1">负</td>
+										</tr>
+									</tbody>
+								</table>
+							</th>
+							<th>
+								<table class="pl_table_data" cellspacing="0" cellpadding="0">
+									<tbody>
+										<tr>
+											<td row="1">值</td>
+										</tr>
+									</tbody>
+								</table>
+							</th>
+							<th row="1">
+								<table class="pl_table_data" cellspacing="0" cellpadding="0">
+									<tbody>
+										<tr>
+											<td width="58" row="1">胜</td>
+											<td row="1">平</td>
+											<td width="58" row="1">负</td>
+										</tr>
+									</tbody>
+								</table>
+							</th>
+							<th>
+								<a class="btn_blue_1 btn_blue_1_h24 btn_blue_w70 downpl" id="link492" href="###">赔率下载</a>
+							</th>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="table_cont_op" id="table_cont" style="padding-top: 0px;" >
+			<table width="1200" class="pub_table" id="datatb" border="0" cellspacing="0" cellpadding="0">
+				<colgroup>
+						<col width="82" />
+						<col width="194" />
+						<col width="220" />
+						<col width="242" />
+						<col width="116" />
+						<col width="220" />
+						<col width="116" />
+				</colgroup>
+				<tbody class="_tbody">
+
+
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<script>
+		$(function(){
+			$.ajax({
+				 url : '/data/oupei?mid=78975&pageindex=1&num=50',
+				 type : "get",
+				 datatype:'json',
+				 success: function (data)
+				 {
+					 for(var i=0; i<data.length;i++)
+						 {
+						 if(i%2==0){
+						 	$("._tbody").append('<tr class="tr1" id='+data[i]["id"]+' xls="row" dt="2018-01-20 15:28:17">'+
+							'<td class="td_one"><p><input id="ck5" type="checkbox" value="" /> '+(i+1)+'</p></td>'+
+							'<td class="tb_plgs" row="1"><p><a title='+data[i]["lyname"]+' id="link493" href="###"><span class="quancheng" style="display: ;">'+data[i]["lyname"]+'</span><span class="guojia" style="display: none;">'+data[i]["lyname"]+'</span></a><img style="margin-left: 15px;" src="/static/img/icon15.png"></p></td>'+
+							'<td><table class="pl_table_data" cellspacing="0" cellpadding="0"><tbody><tr class="chupan"><td width="72" row="1">'+data[i]["odds11"]+'</td><td width="76" style="cursor: pointer;" onclick="javascript:openpl(this)" row="1" ref="-0.750">'+data[i]["odds12"]+'</td><td width="72" row="1">'+data[i]["odds13"]+'</td></tr><tr><td width="72" row="1">'+data[i]["odds21"]+'</td><td width="76" style="cursor: pointer;" onclick="javascript:openpl(this)" row="1" ref="-0.750">'+data[i]["odds22"]+'</td><td width="72" row="1">'+data[i]["odds23"]+'</td></tr></tbody></table></td>'+
+							'<td row="1"><table class="pl_table_data" cellspacing="0" cellpadding="0"><tbody><tr class="chupan"><td width="80" row="1">'+data[i]["chance11"]+'</td><td width="82" style="cursor: pointer;" onclick="javascript:openpl(this)" row="1" ref="-0.750">'+data[i]["chance12"]+'</td><td width="80" row="1">'+data[i]["chance13"]+'</td></tr><tr><td width="80" row="1">'+data[i]["chance21"]+'</td><td width="82" style="cursor: pointer;" onclick="javascript:openpl(this)" row="1" ref="-0.750">'+data[i]["chance22"]+'</td><td width="80" row="1">'+data[i]["chance23"]+'</td></tr></tbody></table></td>'+
+							'<td><table class="pl_table_data" cellspacing="0" cellpadding="0"><tbody><tr class="chupan"><td width="116" row="1">'+data[i]["retratio1"]+'</td></tr><tr><td width="116" row="1">'+data[i]["retratio2"]+'</td></tr></tbody></table></td>'+
+							'<td row="1"><table class="pl_table_data" cellspacing="0" cellpadding="0"><tbody><tr class="chupan"><td width="80" row="1">'+data[i]["kaili11"]+'</td><td width="82" style="cursor: pointer;" onclick="javascript:openpl(this)" row="1" ref="-0.750">'+data[i]["kaili12"]+'</td><td width="80" row="1">'+data[i]["kaili13"]+'</td></tr><tr><td width="80" row="1">'+data[i]["kaili21"]+'</td><td width="82" style="cursor: pointer;" onclick="javascript:openpl(this)" row="1" ref="-0.750">'+data[i]["kaili22"]+'</td><td width="80" row="1">'+data[i]["kaili23"]+'</td></tr></tbody></table></td>'+
+							'<td><a id="link494" href="###" target="_blank" rel="nofollow">主</a><a id="link495" href="###" target="_blank" rel="nofollow">客</a><a class="red" id="link496" href="###" target="_blank" rel="nofollow">同</a></td>'+
+						'</tr>')
+						 }
+						 else {
+						 	$("._tbody").append('<tr class="tr2" id='+data[i]["id"]+' xls="row" dt="2018-01-20 15:28:17">'+
+							'<td class="td_one"><p><input id="ck5" type="checkbox" value="" /> '+(i+1)+'</p></td>'+
+							'<td class="tb_plgs" row="1"><p><a title='+data[i]["lyname"]+' id="link493" href="###"><span class="quancheng" style="display: ;">'+data[i]["lyname"]+'</span><span class="guojia" style="display: none;">'+data[i]["lyname"]+'</span></a><img style="margin-left: 15px;" src="/static/img/icon15.png"></p></td>'+
+							'<td><table class="pl_table_data" cellspacing="0" cellpadding="0"><tbody><tr class="chupan"><td width="72" row="1">'+data[i]["odds11"]+'</td><td width="76" style="cursor: pointer;" onclick="javascript:openpl(this)" row="1" ref="-0.750">'+data[i]["odds12"]+'</td><td width="72" row="1">'+data[i]["odds13"]+'</td></tr><tr><td width="72" row="1">'+data[i]["odds21"]+'</td><td width="76" style="cursor: pointer;" onclick="javascript:openpl(this)" row="1" ref="-0.750">'+data[i]["odds22"]+'</td><td width="72" row="1">'+data[i]["odds23"]+'</td></tr></tbody></table></td>'+
+							'<td row="1"><table class="pl_table_data" cellspacing="0" cellpadding="0"><tbody><tr class="chupan"><td width="80" row="1">'+data[i]["chance11"]+'</td><td width="82" style="cursor: pointer;" onclick="javascript:openpl(this)" row="1" ref="-0.750">'+data[i]["chance12"]+'</td><td width="80" row="1">'+data[i]["chance13"]+'</td></tr><tr><td width="80" row="1">'+data[i]["chance21"]+'</td><td width="82" style="cursor: pointer;" onclick="javascript:openpl(this)" row="1" ref="-0.750">'+data[i]["chance22"]+'</td><td width="80" row="1">'+data[i]["chance23"]+'</td></tr></tbody></table></td>'+
+							'<td><table class="pl_table_data" cellspacing="0" cellpadding="0"><tbody><tr class="chupan"><td width="116" row="1">'+data[i]["retratio1"]+'</td></tr><tr><td width="116" row="1">'+data[i]["retratio2"]+'</td></tr></tbody></table></td>'+
+							'<td row="1"><table class="pl_table_data" cellspacing="0" cellpadding="0"><tbody><tr class="chupan"><td width="80" row="1">'+data[i]["kaili11"]+'</td><td width="82" style="cursor: pointer;" onclick="javascript:openpl(this)" row="1" ref="-0.750">'+data[i]["kaili12"]+'</td><td width="80" row="1">'+data[i]["kaili13"]+'</td></tr><tr><td width="80" row="1">'+data[i]["kaili21"]+'</td><td width="82" style="cursor: pointer;" onclick="javascript:openpl(this)" row="1" ref="-0.750">'+data[i]["kaili22"]+'</td><td width="80" row="1">'+data[i]["kaili23"]+'</td></tr></tbody></table></td>'+
+							'<td><a id="link494" href="###" target="_blank" rel="nofollow">主</a><a id="link495" href="###" target="_blank" rel="nofollow">客</a><a class="red" id="link496" href="###" target="_blank" rel="nofollow">同</a></td>'+
+						'</tr>')
+						 }
+						 }
+				 }
+  	    	});
+  	    });
+	</script>
+{% endblock %}

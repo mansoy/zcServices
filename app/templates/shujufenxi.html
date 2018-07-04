@@ -1,0 +1,1119 @@
+{% extends "dabase.html" %}
+{% block head %}
+	{{ super() }}
+	<title>{%block title %}数据分析{% endblock %}</title>
+{% endblock %}
+{% block bodystyle%}id="other_body"{% endblock %}
+{% block body %}
+	{{ super() }}
+	<!-- 内容部分 -->
+	<div id="fenxi_content">
+		<!--猜胜负-->
+		<div class="guess">
+			<div class="guess_title">
+				<h2>猜胜负(61791人参与)</h2>
+			</div>
+			<div class="guess_cont">
+				<div class="left">
+					<span>12%</span>
+					<img src="/static/img/10.png">
+					<h4>悉尼FC 主胜</h4>
+				</div>
+				<div class="middle">
+					<span>64%</span>
+					<img src="/static/img/11.png">
+					<h4>主平</h4>
+				</div>
+				<div class="right">
+					<span>24%</span>
+					<img src="/static/img/12.png">
+					<h4>阿德莱德联 主胜</h4>
+				</div>
+			</div>
+		</div>
+		<!-- 赛前联赛积分排名 -->
+		<div class="rank">
+			<div class="rank_title">
+				<h2>赛前联赛积分排名</h2>
+			</div>
+			<div class="M_sub_title">
+				<div class="team_name">
+					悉尼FC
+					<span>[澳超2]</span>
+				</div>
+				<div class="team_name">
+					阿德莱德联
+					<span>[澳超9]</span>
+				</div>
+			</div>
+			<div class="M_content">
+				<div class="team_a">
+					<table width="100%" class="pub_table" border="0" cellspacing="0" cellpadding="0">
+						<colgroup>
+							<col width="11%" />
+							<col width="10%" />
+							<col width="8%" />
+							<col width="8%" />
+							<col width="8%" />
+							<col width="8%" />
+							<col width="8%" />
+							<col width="8%" />
+							<col width="10%" />
+							<col width="10%" />
+							<col width="11%" />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th class="th_one"></th>
+								<th>比赛</th>
+								<th>胜</th>
+								<th>负</th>
+								<th>平</th>
+								<th>进</th>
+								<th>失</th>
+								<th>净</th>
+								<th>积分</th>
+								<th>排名</th>
+								<th>胜率</th>
+							</tr>
+							<tr>
+								<td class="td_one">总成绩</td>
+								<td>15</td>
+								<td>11</td>
+								<td>4</td>
+								<td>0</td>
+								<td>34</td>
+								<td>7</td>
+								<td>27</td>
+								<td><span class="ying">37</span></td>
+								<td>1</td>
+								<td>74%</td>
+							</tr>
+							<tr class="tr3">
+								<td class="td_one">主场</td>
+								<td>7</td>
+								<td>4</td>
+								<td>3</td>
+								<td>0</td>
+								<td>13</td>
+								<td>3</td>
+								<td>10</td>
+								<td><span class="ying">15</span></td>
+								<td>3</td>
+								<td>58%</td>
+							</tr>
+							<tr>
+								<td class="td_one">客场</td>
+								<td>8</td>
+								<td>7</td>
+								<td>1</td>
+								<td>0</td>
+								<td>21</td>
+								<td>4</td>
+								<td>17</td>
+								<td><span class="ying">22</span></td>
+								<td>1</td>
+								<td>88%</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="team_b">
+					<table width="100%" class="pub_table" border="0" cellspacing="0" cellpadding="0">
+						<colgroup>
+							<col width="11%" />
+							<col width="10%" />
+							<col width="8%" />
+							<col width="8%" />
+							<col width="8%" />
+							<col width="8%" />
+							<col width="8%" />
+							<col width="8%" />
+							<col width="10%" />
+							<col width="10%" />
+							<col width="11%" />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th class="th_one"></th>
+								<th>比赛</th>
+								<th>胜</th>
+								<th>负</th>
+								<th>平</th>
+								<th>进</th>
+								<th>失</th>
+								<th>净</th>
+								<th>积分</th>
+								<th>排名</th>
+								<th>胜率</th>
+							</tr>
+							<tr>
+								<td class="td_one">总成绩</td>
+								<td>15</td>
+								<td>11</td>
+								<td>4</td>
+								<td>3</td>
+								<td>37</td>
+								<td>17</td>
+								<td>18</td>
+								<td><span class="ying">33</span></td>
+								<td>2</td>
+								<td>63%</td>
+							</tr>
+							<tr class="tr3">
+								<td class="td_one">主场</td>
+								<td>16</td>
+								<td>10</td>
+								<td>3</td>
+								<td>3</td>
+								<td>35</td>
+								<td>17</td>
+								<td>18</td>
+								<td><span class="ying">20</span></td>
+								<td>2</td>
+								<td>67%</td>
+							</tr>
+							<tr>
+								<td class="td_one">客场</td>
+								<td>16</td>
+								<td>10</td>
+								<td>3</td>
+								<td>3</td>
+								<td>35</td>
+								<td>17</td>
+								<td>18</td>
+								<td><span class="ying">33</span></td>
+								<td>2</td>
+								<td>58%</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<!-- 交战历史 -->
+		<div class="mar_b history M_box" id="team_jiaozhan">
+			<div class="M_title">
+				<h2>悉尼FCVS阿德莱德联 交战历史</h2>
+				<span class="his_info">
+					双方近 
+					<span class="fb2">6</span>
+					次交战，悉尼FC 
+					<span class="f16">
+						<em class="red">1胜</em>
+						<em class="green">3平</em>
+						<em class="blue">2胜</em>
+					</span>
+					，进8球，失7球，大球3次，小球3次
+				</span>
+			</div>
+			<div class="M_content_t">
+				<form name="jiaozhan" id="jiaozhan" onsubmit="return false;" method="post">
+					<input type="hidden" name="r" value="1" />
+					<div class="selt">
+						<div class="selt_box">
+							<span class="selt_t">
+								<em id="home_jz" val="0">全部赛事</em>
+								<i class="selt_raw"></i>
+							</span>
+						</div>
+						<div class="selt_box selt_box2">
+							<span class="selt_t">
+								<em id="limit_jz" val="6">6场</em>
+								<i class="selt_raw"></i>
+							</span>
+						</div>
+						<span class="mar_right15">
+							<input class="jz" type="checkbox" checked="checked" value="312">
+							澳超
+						</span>
+						<span class="mar_right15">
+							<input class="jz" type="checkbox" checked="checked" value="306">
+							球会友谊
+						</span>
+					</div>
+					<div class="M_content_topr">
+						<span class="mar_right15">
+							<input type="checkbox" name="bhbc" value="1">
+							包含本场
+						</span>
+						<span class="mar_right15">
+							<input type="checkbox" id="benc" name="sqpm" checked="checked" value="1">
+							赛前排名
+						</span>
+					</div>
+				</form>
+			</div>
+			<div class="M_content">
+				<table width="100%" class="pub_table" border="0" cellspacing="0" cellpadding="0">
+					<colgroup>
+						<col width="60" />
+						<col width="108" />
+						<col width="260" />
+						<col width="54" />
+						<col width="54" />
+						<col width="222" />
+						<col width="220" />
+						<col width="54" />
+						<col width="54" />
+						<col width="112" />
+					</colgroup>
+					<tbody>
+						<tr>
+							<th class="th_one">赛事</th>
+							<th>比赛日期</th>
+							<th>
+								<p class="dz">
+									<span class="dz-1">主队</span>
+									<em>比分</em>
+									<span class="dz-r">客队</span>
+								</p>
+							</th>
+							<th>半场</th>
+							<th>赛果</th>
+							<th>
+								<select name="oupei" class="sxpl" style="margin-left: 10px;" data-t="op">
+									<option value="0">平均欧指</option>
+									<option value="293">威廉希尔</option>
+									<option value="5">澳门</option>
+									<option value="2">立博</option>
+									<option value="3">bet365</option>
+									<option value="4">interwetten</option>
+									<option value="8">Snai</option>
+									<option value="12">Oddest</option>
+								</select>
+								<select name="oupei" class="sxpl" style="margin-left: 10px;" data-t="pk">
+									<option value="0">终盘</option>
+									<option value="1">初盘</option>
+								</select>
+							</th>
+							<th>
+								<select name="yapan" class="sxpl" style="margin-left: 10px;" data-t="yp">
+									<option value="5">澳门</option>
+									<option value="2">立博</option>
+									<option value="3">bet365</option>
+									<option value="6">伟德</option>
+									<option value="9">易胜博</option>
+									<option value="280">皇冠</option>
+								</select>
+								<select name="yapan" class="sxpl" style="margin-left: 10px;" data-t="pk">
+									<option value="0">终盘</option>
+									<option value="1">初盘</option>
+								</select>
+							</th>
+							<th>盘路</th>
+							<th>大小</th>
+							<th>备注</th>
+						</tr>
+						<tr class="tr3 bmatch" style="display: none;" side="5" fid="545815">
+							<td class="td_one" bgcolor="#336699">
+								<a title="" id="link611" href="###" target="_blank" rel="nofollow">澳超</a>
+							</td>
+							<td>2016-02-20</td>
+							<td class="dz">
+								<a title="悉尼FCVS阿德莱德联数据分析" id="link612" href="###" target="_black">
+									<span class="dz-1 zhu">
+										<span class="gray" style="display: none;">[8]</span>
+										悉尼FC
+									</span>
+									<em>
+										<span class="ying">3</span>
+										:2
+									</em>
+									<span class="dz-r">
+										阿德莱德联
+										<span class="gray" style="display: none;">[9]</span>
+									</span>
+								</a>
+							</td>
+							<td>VS</td>
+							<td>
+								<span class="ying">胜</span>
+							</td>
+							<td>
+								<p class="pub_table_pl">
+									<span class="pl_yes">2.24</span>
+									<span>3.44</span>
+									<span>2.65</span>
+								</p>
+							</td>
+							<td>
+								<p class="pub_table_pl">
+									<span class="pl_yes">0.88</span>
+									<span class="table_pl_conter">平手</span>
+									<span>2.65</span>
+								</p>
+							</td>
+							<td>
+								<span class="ying">赢</span>
+							</td>
+							<td>
+								<span class="ying">大</span>
+							</td>
+							<td></td>
+						</tr>
+						<tr class="tr1" sid="5" fid="545793">
+							<td class="td_one" bgcolor="#336699">
+								<a title="澳大利亚超级联赛" id="link613" href="###" target="_black" rel="nofollow">澳超</a>
+							</td>
+							<td>2016-01-17</td>
+							<td class="dz">
+								<a title="澳大利亚超级联赛" id="link614" href="###" target="_black">
+									<span class="dz-1 zhu">
+										<span class="gray" style="display: none;">[9]</span>
+										悉尼FC
+									</span>
+									<em class="bg_c_green">
+										3 : 1
+									</em>
+									<span class="dz-r">
+										阿德莱德联
+										<span class="gray" style="display: none;">[7]</span>
+									</span>
+								</a>
+							</td>
+							<td>
+								<span class="ying">2</span>
+								:0
+							</td>
+							<td>
+								<span class="ying">胜</span>
+							</td>
+							<td>
+								<p class="pub_table_pl">
+									<span class="pl_yes">2.24</span>
+									<span>3.44</span>
+									<span>2.65</span>
+								</p>
+							</td>
+							<td>
+								<p class="pub_table_pl">
+									<span class="pl_yes">0.88</span>
+									<span class="table_pl_conter">平手</span>
+									<span>2.65</span>
+								</p>
+							</td>
+							<td>
+								<span class="ying">赢</span>
+							</td>
+							<td>
+								<span class="ying">大</span>
+							</td>
+							<td>-</td>
+						</tr>
+						<tr class="tr2" sid="5" fid="545793">
+							<td class="td_one" bgcolor="#336699">
+								<a title="澳大利亚超级联赛" id="link613" href="###" target="_black" rel="nofollow">澳超</a>
+							</td>
+							<td>2016-01-17</td>
+							<td class="dz">
+								<a title="澳大利亚超级联赛" id="link614" href="###" target="_black">
+									<span class="dz-1">
+										<span class="gray" style="display: none;">[9]</span>
+										悉尼FC
+									</span>
+									<em class="bg_c_red">
+										3 : 1
+									</em>
+									<span class="dz-r zhu">
+										阿德莱德联
+										<span class="gray" style="display: none;">[7]</span>
+									</span>
+								</a>
+							</td>
+							<td>
+								<span class="ying">2</span>
+								:0
+							</td>
+							<td>
+								<span class="ying">胜</span>
+							</td>
+							<td>
+								<p class="pub_table_pl">
+									<span class="pl_yes">2.24</span>
+									<span>3.44</span>
+									<span>2.65</span>
+								</p>
+							</td>
+							<td>
+								<p class="pub_table_pl">
+									<span class="pl_yes">0.88</span>
+									<span class="table_pl_conter">平手</span>
+									<span>2.65</span>
+								</p>
+							</td>
+							<td>
+								<span class="ying">赢</span>
+							</td>
+							<td>
+								<span class="ying">大</span>
+							</td>
+							<td>-</td>
+						</tr>
+						<tr class="tr1" sid="5" fid="545793">
+							<td class="td_one" bgcolor="#336699">
+								<a title="澳大利亚超级联赛" id="link613" href="###" target="_black" rel="nofollow">澳超</a>
+							</td>
+							<td>2016-01-17</td>
+							<td class="dz">
+								<a title="澳大利亚超级联赛" id="link614" href="###" target="_black">
+									<span class="dz-1 zhu">
+										<span class="gray" style="display: none;">[9]</span>
+										悉尼FC
+									</span>
+									<em class="bg_c_blue">
+										3 : 1
+									</em>
+									<span class="dz-r">
+										阿德莱德联
+										<span class="gray" style="display: none;">[7]</span>
+									</span>
+								</a>
+							</td>
+							<td>
+								<span class="ying">2</span>
+								:0
+							</td>
+							<td>
+								<span class="ying">胜</span>
+							</td>
+							<td>
+								<p class="pub_table_pl">
+									<span class="pl_yes">2.24</span>
+									<span>3.44</span>
+									<span>2.65</span>
+								</p>
+							</td>
+							<td>
+								<p class="pub_table_pl">
+									<span class="pl_yes">0.88</span>
+									<span class="table_pl_conter">平手</span>
+									<span>2.65</span>
+								</p>
+							</td>
+							<td>
+								<span class="ying">赢</span>
+							</td>
+							<td>
+								<span class="ying">大</span>
+							</td>
+							<td>-</td>
+						</tr>
+						<tr class="tr2" sid="5" fid="545793">
+							<td class="td_one" bgcolor="#336699">
+								<a title="澳大利亚超级联赛" id="link613" href="###" target="_black" rel="nofollow">澳超</a>
+							</td>
+							<td>2016-01-17</td>
+							<td class="dz">
+								<a title="澳大利亚超级联赛" id="link614" href="###" target="_black">
+									<span class="dz-1">
+										<span class="gray" style="display: none;">[9]</span>
+										悉尼FC
+									</span>
+									<em class="bg_c_red">
+										3 : 1
+									</em>
+									<span class="dz-r zhu">
+										阿德莱德联
+										<span class="gray" style="display: none;">[7]</span>
+									</span>
+								</a>
+							</td>
+							<td>
+								<span class="ying">2</span>
+								:0
+							</td>
+							<td>
+								<span class="ying">胜</span>
+							</td>
+							<td>
+								<p class="pub_table_pl">
+									<span class="pl_yes">2.24</span>
+									<span>3.44</span>
+									<span>2.65</span>
+								</p>
+							</td>
+							<td>
+								<p class="pub_table_pl">
+									<span class="pl_yes">0.88</span>
+									<span class="table_pl_conter">平手</span>
+									<span>2.65</span>
+								</p>
+							</td>
+							<td>
+								<span class="ying">赢</span>
+							</td>
+							<td>
+								<span class="ying">大</span>
+							</td>
+							<td>-</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<!-- 近期战绩 -->
+		<div class="M_box record">
+			<div class="M_title">
+				<h2>近期战绩</h2>
+				<p class="M_title_fx" id="odds_title_cur">
+					<span class="title_cur" onclick="_hmt.push" data-v="0">图表分析</span>
+					|
+					<span class="title_cur" onclick="_hmt.push" data-v="1">数据分析</span>
+				</p>
+			</div>
+			<div class="odds_zj_tubiao module_cur">
+				<div class="team_a" id="team_zhanji_1">
+					<form name="zhanji_01" id="zhanji_01" unsubmit="return false;" method="post">
+						<input type="hidden" name="r" value="1">
+					</form>
+					<div class="M_content_t">
+						<div class="selt">
+							<strong class="team_name">悉尼FC</strong>
+							<div class="selt_box selt_box2">
+								<span class="selt_t">
+									<em id="limit_jz_1" val="10">10场</em>
+									<i class="selt_raw"></i>
+								</span>
+								<ul class="selt_list" style="display: none;">
+									<li onclick="getZhanji" val="6">6场</li>
+									<li onclick="getZhanji" val="10">10场</li>
+									<li onclick="getZhanji" val="15">15场</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="record_check">
+						<span class="mar_right15">
+							<input class="zj0_1" type="checkbox" checked="checked" value="312">
+							澳超
+						</span>
+						<span class="mar_right15">
+							<input class="zj0_1" type="checkbox" checked="checked" value="306">
+							球会友谊
+						</span>
+						<span class="mar_right15">
+							<input class="zj0_1" type="checkbox" checked="checked" value="574">
+							澳足杯
+						</span>
+						<span class="mar_right15">
+							<input class="zj0_1" type="checkbox" checked="checked" value="517">
+							澳足杯
+						</span>
+					</div>
+					<div class="M_content">
+						<table class="pub_table" width="100%" border="0" cellspacing="0" cellpadding="0">
+							<tbody>
+								<tr>
+									<th width="60" class="th_one">赛事</th>
+									<th width="108">比赛日期</th>
+									<th>
+										<p class="dz">
+											<span class="dz-1">主队</span>
+											<em>比分</em>
+											<span class="dz-r">客队</span>
+										</p>
+									</th>
+									<th width="50">盘口</th>
+									<th width="50">半场</th>
+									<th width="50">赛果</th>
+									<th width="50">盘路</th>
+									<th width="50">大小</th>
+								</tr>
+								<tr class="tr3 bmatch" style="display: none;">
+									<td class="td_one" bgcolor="#336699">
+										<a title="" id="link506" href="###" target="_black" rel="nofollow">澳超</a>
+									</td>
+									<td>18-01-20</td>
+									<td class="dz">
+										<a title="悉尼FCVS阿德莱德联数据分析" id="link507" href="###" target="_black">
+											<span class="dz-1 zhu">悉尼FC</span>
+											<em class="bg_c_red">2:3</em>
+											<span class="dz-r">阿德莱德联</span>
+										</a>
+									</td>
+									<td title="半球/一球">-0.75</td>
+									<td>VS</td>
+									<td>
+										<span class="shu">负</span>
+									</td>
+									<td>
+										<span class="shu">输</span>
+									</td>
+									<td>
+										<span class="ying">大</span>
+									</td>
+								</tr>
+								<tr class="tr1">
+									<td class="td_one" bgcolor="#336699">
+										<a title="" id="link506" href="###" target="_black" rel="nofollow">澳超</a>
+									</td>
+									<td>18-01-12</td>
+									<td class="dz">
+										<a title="悉尼FCVS阿德莱德联数据分析" id="link507" href="###" target="_black">
+											<span class="dz-1 zhu">悉尼FC</span>
+											<em class="bg_c_red">1:0</em>
+											<span class="dz-r">阿德莱</span>
+										</a>
+									</td>
+									<td title="半球/一球">-0.75</td>
+									<td>
+										<span class="ying">1</span>
+										:0
+									</td>
+									<td>
+										<span class="ying">胜</span>
+									</td>
+									<td>
+										<span class="ying">赢</span>
+									</td>
+									<td>
+										<span class="shu">小</span>
+									</td>
+								</tr>
+								<tr class="tr2">
+									<td class="td_one" bgcolor="#336699">
+										<a title="" id="link506" href="###" target="_black" rel="nofollow">澳超</a>
+									</td>
+									<td>18-01-12</td>
+									<td class="dz">
+										<a title="悉尼FCVS阿德莱德联数据分析" id="link507" href="###" target="_black">
+											<span class="dz-1 zhu">悉尼FC</span>
+											<em class="bg_c_blue">1:0</em>
+											<span class="dz-r">阿德莱</span>
+										</a>
+									</td>
+									<td title="半球/一球">-0.75</td>
+									<td>
+										<span class="ying">1</span>
+										:0
+									</td>
+									<td>
+										<span class="ying">胜</span>
+									</td>
+									<td>
+										<span class="ying">赢</span>
+									</td>
+									<td>
+										<span class="shu">小</span>
+									</td>
+								</tr>
+								<tr class="tr1">
+									<td class="td_one" bgcolor="#336699">
+										<a title="" id="link506" href="###" target="_black" rel="nofollow">澳超</a>
+									</td>
+									<td>18-01-12</td>
+									<td class="dz">
+										<a title="悉尼FCVS阿德莱德联数据分析" id="link507" href="###" target="_black">
+											<span class="dz-1 zhu">悉尼FC</span>
+											<em class="bg_c_red">1:0</em>
+											<span class="dz-r">阿德莱</span>
+										</a>
+									</td>
+									<td title="半球/一球">-0.75</td>
+									<td>
+										<span class="ying">1</span>
+										:0
+									</td>
+									<td>
+										<span class="ying">胜</span>
+									</td>
+									<td>
+										<span class="ying">赢</span>
+									</td>
+									<td>
+										<span class="shu">小</span>
+									</td>
+								</tr>
+								<tr class="tr2">
+									<td class="td_one" bgcolor="#336699">
+										<a title="" id="link506" href="###" target="_black" rel="nofollow">澳超</a>
+									</td>
+									<td>18-01-12</td>
+									<td class="dz">
+										<a title="悉尼FCVS阿德莱德联数据分析" id="link507" href="###" target="_black">
+											<span class="dz-1 zhu">悉尼FC</span>
+											<em class="bg_c_blue">1:0</em>
+											<span class="dz-r">阿德莱</span>
+										</a>
+									</td>
+									<td title="半球/一球">-0.75</td>
+									<td>
+										<span class="ying">1</span>
+										:0
+									</td>
+									<td>
+										<span class="ying">胜</span>
+									</td>
+									<td>
+										<span class="ying">赢</span>
+									</td>
+									<td>
+										<span class="shu">小</span>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="team_a" id="team_zhanji_0">
+					<form name="zhanji_01" id="zhanji_01" unsubmit="return false;" method="post">
+						<input type="hidden" name="r" value="1">
+					</form>
+					<div class="M_content_t">
+						<div class="selt">
+							<strong class="team_name">阿德莱德联</strong>
+							<div class="selt_box selt_box2">
+								<span class="selt_t">
+									<em id="limit_jz_1" val="10">10场</em>
+									<i class="selt_raw"></i>
+								</span>
+								<ul class="selt_list" style="display: none;">
+									<li onclick="getZhanji" val="6">6场</li>
+									<li onclick="getZhanji" val="10">10场</li>
+									<li onclick="getZhanji" val="15">15场</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="record_check">
+						<span class="mar_right15">
+							<input class="zj0_1" type="checkbox" checked="checked" value="312">
+							澳超
+						</span>
+						<span class="mar_right15">
+							<input class="zj0_1" type="checkbox" checked="checked" value="306">
+							球会友谊
+						</span>
+						<span class="mar_right15">
+							<input class="zj0_1" type="checkbox" checked="checked" value="574">
+							澳足杯
+						</span>
+						<span class="mar_right15">
+							<input class="zj0_1" type="checkbox" checked="checked" value="517">
+							澳足杯
+						</span>
+					</div>
+					<div class="M_content">
+						<table class="pub_table" width="100%" border="0" cellspacing="0" cellpadding="0">
+							<tbody>
+								<tr>
+									<th width="60" class="th_one">赛事</th>
+									<th width="108">比赛日期</th>
+									<th>
+										<p class="dz">
+											<span class="dz-1">主队</span>
+											<em>比分</em>
+											<span class="dz-r">客队</span>
+										</p>
+									</th>
+									<th width="50">盘口</th>
+									<th width="50">半场</th>
+									<th width="50">赛果</th>
+									<th width="50">盘路</th>
+									<th width="50">大小</th>
+								</tr>
+								<tr class="tr3 bmatch" style="display: none;">
+									<td class="td_one" bgcolor="#336699">
+										<a title="" id="link506" href="###" target="_black" rel="nofollow">澳超</a>
+									</td>
+									<td>18-01-20</td>
+									<td class="dz">
+										<a title="悉尼FCVS阿德莱德联数据分析" id="link507" href="###" target="_black">
+											<span class="dz-1 zhu">悉尼FC</span>
+											<em class="bg_c_red">2:3</em>
+											<span class="dz-r">阿德莱德联</span>
+										</a>
+									</td>
+									<td title="半球/一球">-0.75</td>
+									<td>VS</td>
+									<td>
+										<span class="shu">负</span>
+									</td>
+									<td>
+										<span class="shu">输</span>
+									</td>
+									<td>
+										<span class="ying">大</span>
+									</td>
+								</tr>
+								<tr class="tr1">
+									<td class="td_one" bgcolor="#336699">
+										<a title="" id="link506" href="###" target="_black" rel="nofollow">澳超</a>
+									</td>
+									<td>18-01-12</td>
+									<td class="dz">
+										<a title="悉尼FCVS阿德莱德联数据分析" id="link507" href="###" target="_black">
+											<span class="dz-1 zhu">悉尼FC</span>
+											<em class="bg_c_red">1:0</em>
+											<span class="dz-r">阿德莱</span>
+										</a>
+									</td>
+									<td title="半球/一球">-0.75</td>
+									<td>
+										<span class="ying">1</span>
+										:0
+									</td>
+									<td>
+										<span class="ying">胜</span>
+									</td>
+									<td>
+										<span class="ying">赢</span>
+									</td>
+									<td>
+										<span class="shu">小</span>
+									</td>
+								</tr>
+								<tr class="tr2">
+									<td class="td_one" bgcolor="#336699">
+										<a title="" id="link506" href="###" target="_black" rel="nofollow">澳超</a>
+									</td>
+									<td>18-01-12</td>
+									<td class="dz">
+										<a title="悉尼FCVS阿德莱德联数据分析" id="link507" href="###" target="_black">
+											<span class="dz-1 zhu">悉尼FC</span>
+											<em class="bg_c_blue">1:0</em>
+											<span class="dz-r">阿德莱</span>
+										</a>
+									</td>
+									<td title="半球/一球">-0.75</td>
+									<td>
+										<span class="ying">1</span>
+										:0
+									</td>
+									<td>
+										<span class="ying">胜</span>
+									</td>
+									<td>
+										<span class="ying">赢</span>
+									</td>
+									<td>
+										<span class="shu">小</span>
+									</td>
+								</tr>
+								<tr class="tr1">
+									<td class="td_one" bgcolor="#336699">
+										<a title="" id="link506" href="###" target="_black" rel="nofollow">澳超</a>
+									</td>
+									<td>18-01-12</td>
+									<td class="dz">
+										<a title="悉尼FCVS阿德莱德联数据分析" id="link507" href="###" target="_black">
+											<span class="dz-1 zhu">悉尼FC</span>
+											<em class="bg_c_red">1:0</em>
+											<span class="dz-r">阿德莱</span>
+										</a>
+									</td>
+									<td title="半球/一球">-0.75</td>
+									<td>
+										<span class="ying">1</span>
+										:0
+									</td>
+									<td>
+										<span class="ying">胜</span>
+									</td>
+									<td>
+										<span class="ying">赢</span>
+									</td>
+									<td>
+										<span class="shu">小</span>
+									</td>
+								</tr>
+								<tr class="tr2">
+									<td class="td_one" bgcolor="#336699">
+										<a title="" id="link506" href="###" target="_black" rel="nofollow">澳超</a>
+									</td>
+									<td>18-01-12</td>
+									<td class="dz">
+										<a title="悉尼FCVS阿德莱德联数据分析" id="link507" href="###" target="_black">
+											<span class="dz-1 zhu">悉尼FC</span>
+											<em class="bg_c_blue">1:0</em>
+											<span class="dz-r">阿德莱</span>
+										</a>
+									</td>
+									<td title="半球/一球">-0.75</td>
+									<td>
+										<span class="ying">1</span>
+										:0
+									</td>
+									<td>
+										<span class="ying">胜</span>
+									</td>
+									<td>
+										<span class="ying">赢</span>
+									</td>
+									<td>
+										<span class="shu">小</span>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 未来赛事-->
+		<div class="M_box integral">
+			<div class="M_title">
+				<h2>未来赛事</h2>
+			</div>
+			<div class="M_sub_title">
+				<div class="team_name">
+					悉尼FC
+					<span>[澳超1]</span>
+				</div>
+				<div class="team_name">
+					阿德莱德联
+					<span>[澳超9]</span>
+				</div>
+			</div>
+			<div class="M_content">
+				<div class="team_a">
+					<table class="pub_table" width="100%" border="0" cellspacing="0" cellpadding="0">
+						<tbody>
+							<tr>
+								<th width="60" class="th_one">赛事</th>
+								<th width="128">比赛日期</th>
+								<th>
+									<p class="int_dz">
+										<span class="dz-1">主队</span>
+										<span class="dz-r">客队</span>
+									</p>
+								</th>
+								<th width="120">相隔</th>
+							</tr>
+							<tr class="tr1">
+								<td class="td_one matchname" bgcolor="#336699">
+									<a title="澳大利亚超级联赛" id="link638" href="###" target="_black">澳超</a>
+								</td>
+								<td>2018-01-25</td>
+								<td>
+									<p class="int_dz">
+										<a title="悉尼FC" class="dz-1" id="link639" href="###" target="_black">悉尼FC</a>
+										<em>VS</em>
+										<a title="阿德莱德联" class="dz-r" id="link640" href="###" target="_black">阿德莱德联</a>
+									</p>
+								</td>
+								<td>5天</td>
+							</tr>
+							<tr class="tr2">
+								<td class="td_one matchname" bgcolor="#336699">
+									<a title="澳大利亚超级联赛" id="link638" href="###" target="_black">澳超</a>
+								</td>
+								<td>2018-01-25</td>
+								<td>
+									<p class="int_dz">
+										<a title="悉尼FC" class="dz-1" id="link639" href="###" target="_black">悉尼FC</a>
+										<em>VS</em>
+										<a title="阿德莱德联" class="dz-r" id="link640" href="###" target="_black">阿德莱德联</a>
+									</p>
+								</td>
+								<td>5天</td>
+							</tr>
+							<tr class="tr1">
+								<td class="td_one matchname" bgcolor="#336699">
+									<a title="澳大利亚超级联赛" id="link638" href="###" target="_black">澳超</a>
+								</td>
+								<td>2018-01-25</td>
+								<td>
+									<p class="int_dz">
+										<a title="悉尼FC" class="dz-1" id="link639" href="###" target="_black">悉尼FC</a>
+										<em>VS</em>
+										<a title="阿德莱德联" class="dz-r" id="link640" href="###" target="_black">阿德莱德联</a>
+									</p>
+								</td>
+								<td>5天</td>
+							</tr>
+							<tr class="tr2">
+								<td class="td_one matchname" bgcolor="#336699">
+									<a title="澳大利亚超级联赛" id="link638" href="###" target="_black">澳超</a>
+								</td>
+								<td>2018-01-25</td>
+								<td>
+									<p class="int_dz">
+										<a title="悉尼FC" class="dz-1" id="link639" href="###" target="_black">悉尼FC</a>
+										<em>VS</em>
+										<a title="阿德莱德联" class="dz-r" id="link640" href="###" target="_black">阿德莱德联</a>
+									</p>
+								</td>
+								<td>5天</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="team_a team_b">
+					<table class="pub_table" width="100%" border="0" cellspacing="0" cellpadding="0">
+						<tbody>
+							<tr>
+								<th width="60" class="th_one">赛事</th>
+								<th width="128">比赛日期</th>
+								<th>
+									<p class="int_dz">
+										<span class="dz-1">主队</span>
+										<span class="dz-r">客队</span>
+									</p>
+								</th>
+								<th width="120">相隔</th>
+							</tr>
+							<tr class="tr1">
+								<td class="td_one matchname" bgcolor="#336699">
+									<a title="澳大利亚超级联赛" id="link638" href="###" target="_black">澳超</a>
+								</td>
+								<td>2018-01-25</td>
+								<td>
+									<p class="int_dz">
+										<a title="悉尼FC" class="dz-1" id="link639" href="###" target="_black">悉尼FC</a>
+										<em>VS</em>
+										<a title="阿德莱德联" class="dz-r" id="link640" href="###" target="_black">阿德莱德联</a>
+									</p>
+								</td>
+								<td>5天</td>
+							</tr>
+							<tr class="tr2">
+								<td class="td_one matchname" bgcolor="#336699">
+									<a title="澳大利亚超级联赛" id="link638" href="###" target="_black">澳超</a>
+								</td>
+								<td>2018-01-25</td>
+								<td>
+									<p class="int_dz">
+										<a title="悉尼FC" class="dz-1" id="link639" href="###" target="_black">悉尼FC</a>
+										<em>VS</em>
+										<a title="阿德莱德联" class="dz-r" id="link640" href="###" target="_black">阿德莱德联</a>
+									</p>
+								</td>
+								<td>5天</td>
+							</tr>
+							<tr class="tr1">
+								<td class="td_one matchname" bgcolor="#336699">
+									<a title="澳大利亚超级联赛" id="link638" href="###" target="_black">澳超</a>
+								</td>
+								<td>2018-01-25</td>
+								<td>
+									<p class="int_dz">
+										<a title="悉尼FC" class="dz-1" id="link639" href="###" target="_black">悉尼FC</a>
+										<em>VS</em>
+										<a title="阿德莱德联" class="dz-r" id="link640" href="###" target="_black">阿德莱德联</a>
+									</p>
+								</td>
+								<td>5天</td>
+							</tr>
+							<tr class="tr2">
+								<td class="td_one matchname" bgcolor="#336699">
+									<a title="澳大利亚超级联赛" id="link638" href="###" target="_black">澳超</a>
+								</td>
+								<td>2018-01-25</td>
+								<td>
+									<p class="int_dz">
+										<a title="悉尼FC" class="dz-1" id="link639" href="###" target="_black">悉尼FC</a>
+										<em>VS</em>
+										<a title="阿德莱德联" class="dz-r" id="link640" href="###" target="_black">阿德莱德联</a>
+									</p>
+								</td>
+								<td>5天</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

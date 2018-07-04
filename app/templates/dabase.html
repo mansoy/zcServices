@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block body %}
+	{{ super() }}
+	<div id="headline_other">
+		<div class="content">
+			<div class="left">
+				<h1>悉尼FC</h1>
+				<h4>上赛季澳超排名:7  赛前排名:1</h4>
+			</div>
+			<div class="middle">
+				<div class="xini">
+					<img src="/static/img/8.png">
+				</div>
+				<div class="score">
+					<h3>16/17澳超第16轮</h3>
+					<h4>上赛季澳超排名：7  赛前排名：1</h4>
+					<h1>2:0</h1>
+				</div>
+				<div class="adelai">
+					<img src="/static/img/9.png">
+				</div>
+			</div>
+			<div class="right">
+				<h1>阿德莱德联</h1>
+				<h4>赛前排名:9  上赛季澳超排名:1</h4>
+			</div>
+		</div>
+	</div>
+	<div id="Schedule">
+		<div class="title">
+			<ul>
+				<li class="{{ g.daclass }}"><a href="{{ url_for('odds.dataAnalys', mid=824, _external=True) }}">投注分析</a></li>
+				<!--<li>情报推荐</li>-->
+				<!--<li>投注分析</li>-->
+				<li class="{{ g.ouclass }}"><a href="{{ url_for('odds.ouOdds', mid=824, _external=True) }}">百家欧赔</a></li>
+				<li class="{{ g.rqclass }}"><a href="{{ url_for('odds.rqOdds', mid=824, _external=True) }}">让球指数</a></li>
+				<li class="{{ g.yaclass }}"><a href="{{ url_for('odds.yaOdds', mid=824, _external=True) }}">亚盘对比</a></li>
+				<li class="{{ g.dxclass }}"><a href="{{ url_for('odds.sizeOdds', mid=824, _external=True) }}">大小指数</a></li>
+				<li class="{{ g.bfclass }}"><a href="{{ url_for('odds.bfOdds', mid=824, _external=True) }}">比分指数</a></li>
+				<!--<li>走势分析</li>-->
+				<li>高级模式</li>
+			</ul>
+		</div>
+		<div class="Foot">
+			<h6>竞足</h6>
+			<img src="/static/img/icon14.png">
+			<h6>单场</h6>
+			<img src="/static/img/icon14.png">
+		</div>
+	</div>
+	<!-- 内容部分 -->
+	{% block content %}{% endblock %}
+{% endblock %}

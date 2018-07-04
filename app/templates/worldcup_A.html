@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<title>听雪体育-2018世界杯</title>
+	<link rel="stylesheet" type="text/css" href="/static/css/index.css">
+	<script type="text/javascript" src="/static/js/jQuery.js"></script>
+	<script type="text/javascript" src="/static/js/jQuery.min.js"></script>
+</head>
+<body id="world_body">
+	<div id="world_top-title">
+		<h1>悉尼FC <span>对战</span> 阿德莱德联</h1>
+	</div>
+	<header id="header">
+		<div class="center">
+			<h1 class="logo">听雪体育</h1>
+			<nav class="link">
+				<ul>
+					<li><a href="{{ url_for('main.index', _external=True) }}">首页</a></li>
+					<li class="active"><a href="{{ url_for('main.worldcup', _external=True) }}">2018世界杯</a></li>
+					<li><a href="{{ url_for('main.yingchao', _external=True) }}">英超</a></li>
+					<li><a href="###">西甲</a></li>
+					<li><a href="###">德甲</a></li>
+					<li><a href="###">意甲</a></li>
+					<li><a href="###">法甲</a></li>
+					<li><a href="###">亚冠</a></li>
+					<li><a href="###">欧冠</a></li>
+					<li><a href="###">中超</a></li>
+					<li><a href="###">APP下载</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div id="headline_world">	
+	</div>
+	<div id="Schedule_world">
+		<div class="title">
+			<ul>
+				<li class="Appoint"><a href="shujufenxi.html">赛程赛果</a></li>
+				<li>联赛积分</li>
+				<li>让球盘路</li>
+				<li>大小球盘路</li>
+				<li>比分统计</li>
+				<li>半全场胜负</li>
+				<li>进球单双数统计</li>
+				<li>净胜/净负球</li>
+				<li>上下半场进球统计</li>
+			</ul>
+		</div>
+	</div>
+	<div id="worldcup_main">
+		<div class="world_Race">
+			<div class="world_Race1">
+				<img src="/static/img/15.png">
+				<img class="xian" src="/static/img/17.png">
+				<img src="static/img/16.png">
+			</div>
+			<div class="world_Race2">
+				<img class="Select" src="/static/img/18.png">
+				<img src="/static/img/19.png">
+				<img src="/static/img/19.png">
+				<img src="/static/img/19.png">
+				<img src="/static/img/19.png">
+				<img src="/static/img/19.png">
+			</div>
+			<div class="world_Race3">
+				<h5 class="click">分组赛</h5>
+				<h5>16强</h5>
+				<h5>半准决赛</h5>
+				<h5>准决赛</h5>
+				<h5>季军赛</h5>
+				<h5>决赛</h5>
+			</div>
+		</div>
+		<div class="world_week">
+			<div class="left_icon"><img src="/static/img/icon17.png"></div>
+			<div class="world_day">
+				<div>
+					<p class="whole">全部</p>
+				</div>
+				<div>
+					<p>06-14 周四</p>
+				</div>
+				<div>
+					<p>06-15 周五</p>
+				</div>
+				<div>
+					<p>06-16 周六</p>
+				</div>
+				<div>
+					<p>06-17 周日</p>
+				</div>
+				<div>
+					<p>06-18 周一</p>
+				</div>
+				<div>
+					<p>06-19 周二</p>
+				</div>
+				<div>
+					<p>06-20 周三</p>
+				</div>
+			</div>
+			<div class="right_icon"><img src="/static/img/icon18.png"></div>
+		</div>
+		<div class="world_group">
+			<h4><a href="{{ url_for('main.worldcup', _external=True) }}">赛程</a></h4>
+			<h4 class="world_group_one"><a href="{{ url_for('main.worldcup', group='A', _external=True) }}">A组</a></h4>
+			<h4>B组</h4>
+			<h4>C组</h4>
+			<h4>D组</h4>
+			<h4>E组</h4>
+			<h4>F组</h4>
+			<h4>G组</h4>
+			<h4>H组</h4>
+		</div>
+		<div class="world_con world_show">
+			<div class="world_Azu">
+			<h2>A组积分榜</h2>
+			<table class="world_Azu_zhandui" border="0" cellspacing="0" cellpadding="0">
+				<colgroup>
+					<col width="86" />
+					<col width="240" />
+					<col width="400" />
+					<col width="450" />
+					<col width="104" />
+				</colgroup>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>乌拉圭</td>
+						<td>
+							<p>0场</p>
+							<p>0胜</p>
+							<p>0平</p>
+							<p>0负</p>
+						</td>
+						<td>
+							<span>得0球</span>
+							<span>失0球</span>
+							<span>净胜0球</span>
+						</td>
+						<td>0分</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>沙特阿拉伯</td>
+						<td>
+							<p>0场</p>
+							<p>0胜</p>
+							<p>0平</p>
+							<p>0负</p>
+						</td>
+						<td>
+							<span>得0球</span>
+							<span>失0球</span>
+							<span>净胜0球</span>
+						</td>
+						<td>0分</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>埃及</td>
+						<td>
+							<p>0场</p>
+							<p>0胜</p>
+							<p>0平</p>
+							<p>0负</p>
+						</td>
+						<td>
+							<span>得0球</span>
+							<span>失0球</span>
+							<span>净胜0球</span>
+						</td>
+						<td>0分</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>俄罗斯</td>
+						<td>
+							<p>0场</p>
+							<p>0胜</p>
+							<p>0平</p>
+							<p>0负</p>
+						</td>
+						<td>
+							<span>得0球</span>
+							<span>失0球</span>
+							<span>净胜0球</span>
+						</td>
+						<td>0分</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+			<div class="world_Race_sur">
+			<div class="world_Race_top">
+				<div class="bisaishijian">
+					<p>比赛时间</p>
+				</div>
+				<div class="bifen">
+					<p class="zhudui">主队</p>
+					<span>比分</span>
+					<p class="kedui">客队</p>
+				</div>
+				<div class="banchang">半场</div>
+				<div class="shengfu">胜负</div>
+				<div class="ouzhi">欧指</div>
+				<div class="shujuzhongxin">数据中心</div>
+			</div>
+
+			<table class="world_title" border="0" cellspacing="0" cellpadding="0">
+				<colgroup>
+					<col width="201" border-right="1px solid #e6e6e6"/>
+					<col width="301" />
+					<col width="167" />
+					<col width="167" />
+					<col width="295" />
+					<col width="147" />
+				</colgroup>
+				<tbody class="world_tbody_a">
+
+				</tbody>
+			</table>
+
+		</div>
+		</div>
+		<div class="world_con">
+			<div class="world_Azu">
+				<h2>B组积分榜</h2>
+				<table class="world_Azu_zhandui" border="0" cellspacing="0" cellpadding="0">
+					<colgroup>
+						<col width="86" />
+						<col width="240" />
+						<col width="400" />
+						<col width="450" />
+						<col width="104" />
+					</colgroup>
+					<tbody>
+					<tr>
+						<td>1</td>
+						<td>葡萄牙</td>
+						<td>
+							<p>0场</p>
+							<p>0胜</p>
+							<p>0平</p>
+							<p>0负</p>
+						</td>
+						<td>
+							<span>得0球</span>
+							<span>失0球</span>
+							<span>净胜0球</span>
+						</td>
+						<td>0分</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>西班牙</td>
+						<td>
+							<p>0场</p>
+							<p>0胜</p>
+							<p>0平</p>
+							<p>0负</p>
+						</td>
+						<td>
+							<span>得0球</span>
+							<span>失0球</span>
+							<span>净胜0球</span>
+						</td>
+						<td>0分</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>伊朗</td>
+						<td>
+							<p>0场</p>
+							<p>0胜</p>
+							<p>0平</p>
+							<p>0负</p>
+						</td>
+						<td>
+							<span>得0球</span>
+							<span>失0球</span>
+							<span>净胜0球</span>
+						</td>
+						<td>0分</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>摩洛哥</td>
+						<td>
+							<p>0场</p>
+							<p>0胜</p>
+							<p>0平</p>
+							<p>0负</p>
+						</td>
+						<td>
+							<span>得0球</span>
+							<span>失0球</span>
+							<span>净胜0球</span>
+						</td>
+						<td>0分</td>
+					</tr>
+				</tbody>
+				</table>
+			</div>
+			<div class="world_Race_sur">
+				<div class="world_Race_top">
+				<div class="bisaishijian">
+					<p>比赛时间</p>
+				</div>
+				<div class="bifen">
+					<p class="zhudui">主队</p>
+					<span>比分</span>
+					<p class="kedui">客队</p>
+				</div>
+				<div class="banchang">半场</div>
+				<div class="shengfu">胜负</div>
+				<div class="ouzhi">欧指</div>
+				<div class="shujuzhongxin">数据中心</div>
+			</div>
+
+			<table class="world_title" border="0" cellspacing="0" cellpadding="0">
+				<colgroup>
+					<col width="201" border-right="1px solid #e6e6e6"/>
+					<col width="301" />
+					<col width="167" />
+					<col width="167" />
+					<col width="295" />
+					<col width="147" />
+				</colgroup>
+				<tbody class="world_tbody_a">
+
+				</tbody>
+			</table>
+
+			</div>
+		</div>
+		<div class="world_con">
+			<div class="world_Azu">
+			<h2>B组积分榜</h2>
+			<table class="world_Azu_zhandui" border="0" cellspacing="0" cellpadding="0">
+				<colgroup>
+					<col width="86" />
+					<col width="240" />
+					<col width="400" />
+					<col width="450" />
+					<col width="104" />
+				</colgroup>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>葡萄牙</td>
+						<td>
+							<p>0场</p>
+							<p>0胜</p>
+							<p>0平</p>
+							<p>0负</p>
+						</td>
+						<td>
+							<span>得0球</span>
+							<span>失0球</span>
+							<span>净胜0球</span>
+						</td>
+						<td>0分</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>西班牙</td>
+						<td>
+							<p>0场</p>
+							<p>0胜</p>
+							<p>0平</p>
+							<p>0负</p>
+						</td>
+						<td>
+							<span>得0球</span>
+							<span>失0球</span>
+							<span>净胜0球</span>
+						</td>
+						<td>0分</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>伊朗</td>
+						<td>
+							<p>0场</p>
+							<p>0胜</p>
+							<p>0平</p>
+							<p>0负</p>
+						</td>
+						<td>
+							<span>得0球</span>
+							<span>失0球</span>
+							<span>净胜0球</span>
+						</td>
+						<td>0分</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>摩洛哥</td>
+						<td>
+							<p>0场</p>
+							<p>0胜</p>
+							<p>0平</p>
+							<p>0负</p>
+						</td>
+						<td>
+							<span>得0球</span>
+							<span>失0球</span>
+							<span>净胜0球</span>
+						</td>
+						<td>0分</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+			<div class="world_Race_sur">
+			<div class="world_Race_top">
+				<div class="bisaishijian">
+					<p>比赛时间</p>
+				</div>
+				<div class="bifen">
+					<p class="zhudui">主队</p>
+					<span>比分</span>
+					<p class="kedui">客队</p>
+				</div>
+				<div class="banchang">半场</div>
+				<div class="shengfu">胜负</div>
+				<div class="ouzhi">欧指</div>
+				<div class="shujuzhongxin">数据中心</div>
+			</div>
+
+			<table class="world_title" border="0" cellspacing="0" cellpadding="0">
+				<colgroup>
+					<col width="201" border-right="1px solid #e6e6e6"/>
+					<col width="301" />
+					<col width="167" />
+					<col width="167" />
+					<col width="295" />
+					<col width="147" />
+				</colgroup>
+				<tbody class="world_tbody_a">
+
+				</tbody>
+			</table>
+
+		</div>
+		</div>
+		<div class="world_con">
+			<div class="world_Azu">
+			<h2>C组积分榜</h2>
+			<table class="world_Azu_zhandui" border="0" cellspacing="0" cellpadding="0">
+				<colgroup>
+					<col width="86" />
+					<col width="240" />
+					<col width="400" />
+					<col width="450" />
+					<col width="104" />
+				</colgroup>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>法国</td>
+						<td>
+							<p>0场</p>
+							<p>0胜</p>
+							<p>0平</p>
+							<p>0负</p>
+						</td>
+						<td>
+							<span>得0球</span>
+							<span>失0球</span>
+							<span>净胜0球</span>
+						</td>
+						<td>0分</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>丹麦</td>
+						<td>
+							<p>0场</p>
+							<p>0胜</p>
+							<p>0平</p>
+							<p>0负</p>
+						</td>
+						<td>
+							<span>得0球</span>
+							<span>失0球</span>
+							<span>净胜0球</span>
+						</td>
+						<td>0分</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>澳大利亚</td>
+						<td>
+							<p>0场</p>
+							<p>0胜</p>
+							<p>0平</p>
+							<p>0负</p>
+						</td>
+						<td>
+							<span>得0球</span>
+							<span>失0球</span>
+							<span>净胜0球</span>
+						</td>
+						<td>0分</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>秘鲁</td>
+						<td>
+							<p>0场</p>
+							<p>0胜</p>
+							<p>0平</p>
+							<p>0负</p>
+						</td>
+						<td>
+							<span>得0球</span>
+							<span>失0球</span>
+							<span>净胜0球</span>
+						</td>
+						<td>0分</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+			<div class="world_Race_sur">
+			<div class="world_Race_top">
+				<div class="bisaishijian">
+					<p>比赛时间</p>
+				</div>
+				<div class="bifen">
+					<p class="zhudui">主队</p>
+					<span>比分</span>
+					<p class="kedui">客队</p>
+				</div>
+				<div class="banchang">半场</div>
+				<div class="shengfu">胜负</div>
+				<div class="ouzhi">欧指</div>
+				<div class="shujuzhongxin">数据中心</div>
+			</div>
+
+			<table class="world_title" border="0" cellspacing="0" cellpadding="0">
+				<colgroup>
+					<col width="201" border-right="1px solid #e6e6e6"/>
+					<col width="301" />
+					<col width="167" />
+					<col width="167" />
+					<col width="295" />
+					<col width="147" />
+				</colgroup>
+				<tbody class="world_tbody_a">
+
+				</tbody>
+			</table>
+
+		</div>
+		</div>
+		<div class="world_con">
+			<div class="world_Azu">
+			<h2>D组积分榜</h2>
+			<table class="world_Azu_zhandui" border="0" cellspacing="0" cellpadding="0">
+				<colgroup>
+					<col width="86" />
+					<col width="240" />
+					<col width="400" />
+					<col width="450" />
+					<col width="104" />
+				</colgroup>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>尼日利亚</td>
+						<td>
+							<p>0场</p>
+							<p>0胜</p>
+							<p>0平</p>
+							<p>0负</p>
+						</td>
+						<td>
+							<span>得0球</span>
+							<span>失0球</span>
+							<span>净胜0球</span>
+						</td>
+						<td>0分</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>克罗地亚</td>
+						<td>
+							<p>0场</p>
+							<p>0胜</p>
+							<p>0平</p>
+							<p>0负</p>
+						</td>
+						<td>
+							<span>得0球</span>
+							<span>失0球</span>
+							<span>净胜0球</span>
+						</td>
+						<td>0分</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>冰岛</td>
+						<td>
+							<p>0场</p>
+							<p>0胜</p>
+							<p>0平</p>
+							<p>0负</p>
+						</td>
+						<td>
+							<span>得0球</span>
+							<span>失0球</span>
+							<span>净胜0球</span>
+						</td>
+						<td>0分</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>阿根廷</td>
+						<td>
+							<p>0场</p>
+							<p>0胜</p>
+							<p>0平</p>
+							<p>0负</p>
+						</td>
+						<td>
+							<span>得0球</span>
+							<span>失0球</span>
+							<span>净胜0球</span>
+						</td>
+						<td>0分</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+			<div class="world_Race_sur">
+			<div class="world_Race_top">
+				<div class="bisaishijian">
+					<p>比赛时间</p>
+				</div>
+				<div class="bifen">
+					<p class="zhudui">主队</p>
+					<span>比分</span>
+					<p class="kedui">客队</p>
+				</div>
+				<div class="banchang">半场</div>
+				<div class="shengfu">胜负</div>
+				<div class="ouzhi">欧指</div>
+				<div class="shujuzhongxin">数据中心</div>
+			</div>
+
+			<table class="world_title" border="0" cellspacing="0" cellpadding="0">
+				<colgroup>
+					<col width="201" border-right="1px solid #e6e6e6"/>
+					<col width="301" />
+					<col width="167" />
+					<col width="167" />
+					<col width="295" />
+					<col width="147" />
+				</colgroup>
+				<tbody class="world_tbody_a">
+
+				</tbody>
+			</table>
+
+		</div>
+		</div>
+		<div class="world_con">
+			<div class="world_Azu">
+			<h2>E组积分榜</h2>
+			<table class="world_Azu_zhandui" border="0" cellspacing="0" cellpadding="0">
+				<colgroup>
+					<col width="86" />
+					<col width="240" />
+					<col width="400" />
+					<col width="450" />
+					<col width="104" />
+				</colgroup>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>瑞士</td>
+						<td>
+							<p>0场</p>
+							<p>0胜</p>
+							<p>0平</p>
+							<p>0负</p>
+						</td>
+						<td>
+							<span>得0球</span>
+							<span>失0球</span>
+							<span>净胜0球</span>
+						</td>
+						<td>0分</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>巴西</td>
+						<td>
+							<p>0场</p>
+							<p>0胜</p>
+							<p>0平</p>
+							<p>0负</p>
+						</td>
+						<td>
+							<span>得0球</span>
+							<span>失0球</span>
+							<span>净胜0球</span>
+						</td>
+						<td>0分</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>塞尔维亚</td>
+						<td>
+							<p>0场</p>
+							<p>0胜</p>
+							<p>0平</p>
+							<p>0负</p>
+						</td>
+						<td>
+							<span>得0球</span>
+							<span>失0球</span>
+							<span>净胜0球</span>
+						</td>
+						<td>0分</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>哥斯达黎加</td>
+						<td>
+							<p>0场</p>
+							<p>0胜</p>
+							<p>0平</p>
+							<p>0负</p>
+						</td>
+						<td>
+							<span>得0球</span>
+							<span>失0球</span>
+							<span>净胜0球</span>
+						</td>
+						<td>0分</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+			<div class="world_Race_sur">
+			<div class="world_Race_top">
+				<div class="bisaishijian">
+					<p>比赛时间</p>
+				</div>
+				<div class="bifen">
+					<p class="zhudui">主队</p>
+					<span>比分</span>
+					<p class="kedui">客队</p>
+				</div>
+				<div class="banchang">半场</div>
+				<div class="shengfu">胜负</div>
+				<div class="ouzhi">欧指</div>
+				<div class="shujuzhongxin">数据中心</div>
+			</div>
+
+			<table class="world_title" border="0" cellspacing="0" cellpadding="0">
+				<colgroup>
+					<col width="201" border-right="1px solid #e6e6e6"/>
+					<col width="301" />
+					<col width="167" />
+					<col width="167" />
+					<col width="295" />
+					<col width="147" />
+				</colgroup>
+				<tbody class="world_tbody_a">
+
+				</tbody>
+			</table>
+
+		</div>
+		</div>
+		<div class="world_con">
+			<div class="world_Azu">
+			<h2>F组积分榜</h2>
+			<table class="world_Azu_zhandui" border="0" cellspacing="0" cellpadding="0">
+				<colgroup>
+					<col width="86" />
+					<col width="240" />
+					<col width="400" />
+					<col width="450" />
+					<col width="104" />
+				</colgroup>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>瑞典</td>
+						<td>
+							<p>0场</p>
+							<p>0胜</p>
+							<p>0平</p>
+							<p>0负</p>
+						</td>
+						<td>
+							<span>得0球</span>
+							<span>失0球</span>
+							<span>净胜0球</span>
+						</td>
+						<td>0分</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>韩国</td>
+						<td>
+							<p>0场</p>
+							<p>0胜</p>
+							<p>0平</p>
+							<p>0负</p>
+						</td>
+						<td>
+							<span>得0球</span>
+							<span>失0球</span>
+							<span>净胜0球</span>
+						</td>
+						<td>0分</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>墨西哥</td>
+						<td>
+							<p>0场</p>
+							<p>0胜</p>
+							<p>0平</p>
+							<p>0负</p>
+						</td>
+						<td>
+							<span>得0球</span>
+							<span>失0球</span>
+							<span>净胜0球</span>
+						</td>
+						<td>0分</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>德国</td>
+						<td>
+							<p>0场</p>
+							<p>0胜</p>
+							<p>0平</p>
+							<p>0负</p>
+						</td>
+						<td>
+							<span>得0球</span>
+							<span>失0球</span>
+							<span>净胜0球</span>
+						</td>
+						<td>0分</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+			<div class="world_Race_sur">
+			<div class="world_Race_top">
+				<div class="bisaishijian">
+					<p>比赛时间</p>
+				</div>
+				<div class="bifen">
+					<p class="zhudui">主队</p>
+					<span>比分</span>
+					<p class="kedui">客队</p>
+				</div>
+				<div class="banchang">半场</div>
+				<div class="shengfu">胜负</div>
+				<div class="ouzhi">欧指</div>
+				<div class="shujuzhongxin">数据中心</div>
+			</div>
+
+			<table class="world_title" border="0" cellspacing="0" cellpadding="0">
+				<colgroup>
+					<col width="201" border-right="1px solid #e6e6e6"/>
+					<col width="301" />
+					<col width="167" />
+					<col width="167" />
+					<col width="295" />
+					<col width="147" />
+				</colgroup>
+				<tbody class="world_tbody_a">
+
+				</tbody>
+			</table>
+
+		</div>
+		</div>
+		<div class="world_con">
+			<div class="world_Azu">
+			<h2>G组积分榜</h2>
+			<table class="world_Azu_zhandui" border="0" cellspacing="0" cellpadding="0">
+				<colgroup>
+					<col width="86" />
+					<col width="240" />
+					<col width="400" />
+					<col width="450" />
+					<col width="104" />
+				</colgroup>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>比利时</td>
+						<td>
+							<p>0场</p>
+							<p>0胜</p>
+							<p>0平</p>
+							<p>0负</p>
+						</td>
+						<td>
+							<span>得0球</span>
+							<span>失0球</span>
+							<span>净胜0球</span>
+						</td>
+						<td>0分</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>巴拿马</td>
+						<td>
+							<p>0场</p>
+							<p>0胜</p>
+							<p>0平</p>
+							<p>0负</p>
+						</td>
+						<td>
+							<span>得0球</span>
+							<span>失0球</span>
+							<span>净胜0球</span>
+						</td>
+						<td>0分</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>突尼斯</td>
+						<td>
+							<p>0场</p>
+							<p>0胜</p>
+							<p>0平</p>
+							<p>0负</p>
+						</td>
+						<td>
+							<span>得0球</span>
+							<span>失0球</span>
+							<span>净胜0球</span>
+						</td>
+						<td>0分</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>英格兰</td>
+						<td>
+							<p>0场</p>
+							<p>0胜</p>
+							<p>0平</p>
+							<p>0负</p>
+						</td>
+						<td>
+							<span>得0球</span>
+							<span>失0球</span>
+							<span>净胜0球</span>
+						</td>
+						<td>0分</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+			<div class="world_Race_sur">
+			<div class="world_Race_top">
+				<div class="bisaishijian">
+					<p>比赛时间</p>
+				</div>
+				<div class="bifen">
+					<p class="zhudui">主队</p>
+					<span>比分</span>
+					<p class="kedui">客队</p>
+				</div>
+				<div class="banchang">半场</div>
+				<div class="shengfu">胜负</div>
+				<div class="ouzhi">欧指</div>
+				<div class="shujuzhongxin">数据中心</div>
+			</div>
+
+			<table class="world_title" border="0" cellspacing="0" cellpadding="0">
+				<colgroup>
+					<col width="201" border-right="1px solid #e6e6e6"/>
+					<col width="301" />
+					<col width="167" />
+					<col width="167" />
+					<col width="295" />
+					<col width="147" />
+				</colgroup>
+				<tbody class="world_tbody_a">
+
+				</tbody>
+			</table>
+
+		</div>
+		</div>
+		<div class="world_con">
+			<div class="world_Azu">
+			<h2>H组积分榜</h2>
+			<table class="world_Azu_zhandui" border="0" cellspacing="0" cellpadding="0">
+				<colgroup>
+					<col width="86" />
+					<col width="240" />
+					<col width="400" />
+					<col width="450" />
+					<col width="104" />
+				</colgroup>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>波兰</td>
+						<td>
+							<p>0场</p>
+							<p>0胜</p>
+							<p>0平</p>
+							<p>0负</p>
+						</td>
+						<td>
+							<span>得0球</span>
+							<span>失0球</span>
+							<span>净胜0球</span>
+						</td>
+						<td>0分</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>塞内加尔</td>
+						<td>
+							<p>0场</p>
+							<p>0胜</p>
+							<p>0平</p>
+							<p>0负</p>
+						</td>
+						<td>
+							<span>得0球</span>
+							<span>失0球</span>
+							<span>净胜0球</span>
+						</td>
+						<td>0分</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>日本</td>
+						<td>
+							<p>0场</p>
+							<p>0胜</p>
+							<p>0平</p>
+							<p>0负</p>
+						</td>
+						<td>
+							<span>得0球</span>
+							<span>失0球</span>
+							<span>净胜0球</span>
+						</td>
+						<td>0分</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>哥伦比亚</td>
+						<td>
+							<p>0场</p>
+							<p>0胜</p>
+							<p>0平</p>
+							<p>0负</p>
+						</td>
+						<td>
+							<span>得0球</span>
+							<span>失0球</span>
+							<span>净胜0球</span>
+						</td>
+						<td>0分</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+			<div class="world_Race_sur">
+			<div class="world_Race_top">
+				<div class="bisaishijian">
+					<p>比赛时间</p>
+				</div>
+				<div class="bifen">
+					<p class="zhudui">主队</p>
+					<span>比分</span>
+					<p class="kedui">客队</p>
+				</div>
+				<div class="banchang">半场</div>
+				<div class="shengfu">胜负</div>
+				<div class="ouzhi">欧指</div>
+				<div class="shujuzhongxin">数据中心</div>
+			</div>
+
+			<table class="world_title" border="0" cellspacing="0" cellpadding="0">
+				<colgroup>
+					<col width="201" border-right="1px solid #e6e6e6"/>
+					<col width="301" />
+					<col width="167" />
+					<col width="167" />
+					<col width="295" />
+					<col width="147" />
+				</colgroup>
+				<tbody class="world_tbody_a">
+
+				</tbody>
+			</table>
+
+		</div>
+		</div>
+
+	</div>
+
+
+	<footer id="footer">
+		<div class="top">
+			<div class="link">
+				<h2>友情链接</h2>
+				<ul class="link1">
+					<li>极速体育</li>
+					<li>比分直播</li>
+					<li>足球比分</li>
+					<li>天下足球网</li>
+					<li>QQ直播网</li>
+				</ul>
+				<ul class="link1">
+					<li>极速体育</li>
+					<li>比分直播</li>
+					<li>足球比分</li>
+					<li>天下足球网</li>
+					<li>QQ直播网</li>
+				</ul>
+				<ul class="link1">
+					<li>极速体育</li>
+					<li>比分直播</li>
+					<li>足球比分</li>
+					<li>天下足球网</li>
+					<li>QQ直播网</li>
+				</ul>
+				<ul class="link1">
+					<li>极速体育</li>
+					<li>比分直播</li>
+					<li>足球比分</li>
+					<li>天下足球网</li>
+					<li>QQ直播网</li>
+				</ul>
+				<ul class="link1">
+					<li>极速体育</li>
+					<li>比分直播</li>
+				</ul>
+			</div>
+			<div class="right">
+				<div class="map">
+					<h2>网站地图</h2>
+					<ul class="Football">
+						<li class="first">足球：</li>
+						<li>足球比分</li>
+						<li>足球比分</li>
+						<li>足球比分</li>
+						<li>足球比分</li>
+					</ul>
+					<ul class="Football">
+						<li class="first">足球：</li>
+						<li>足球比分</li>
+						<li>足球比分</li>
+						<li>足球比分</li>
+						<li>足球比分</li>
+						<li class="first">足球比分</li>
+						<li class="Last"><img src="/static/img/icon13.png"></li>
+					</ul>
+				</div>
+				<div class="contact">
+					<h2>联系方式</h2>
+					<ul class="user">
+						<li>用户服务：service@leisu.com</li>
+						<li>合作邮箱：hezuo@leisu.com</li>
+						<li>客服：800830816</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="bottom">
+			<div class="content">
+				<p>沪 ICP 备  15052255 号-1  |  Copyright @ 2015-2016 leisu.ALL Rights Reserved  |  关于雷速  |  免责声明  |  网站地图  |  联系方式  |  免费比分调用</p>	
+			</div>
+		</div>
+	</footer>
+
+	<script>
+
+		$(function(){
+			$.ajax({
+				 url : '/data/wc',
+				 type : "get",
+				 datatype:'json',
+				 success: function (data)
+				 {
+					 for(var i=0; i<7;i++)
+						 {
+						 if(i%2==0){
+							$(".world_tbody_a").append('<tr class="tr1">'+
+							'<td>'+data[i]["mdate"]+' &nbsp &nbsp '+data[i]["mtime"]+'</td>'+
+							'<td><span class="main">'+data[i]["mtname"]+'</span><em>0-0</em><span class="pass">'+data[i]["dtname"]+'</span></td>'+
+							'<td>0</td>'+
+							'<td>0</td>'+
+							'<td><span class="sheng">0</span><span class="ping">0</span><span class="fu">0</span></td>'+
+							'<td class="last"><span>析</span><span>亚</span><span>欧</span><span>大</span></td>'+
+							'</tr>')
+							}
+						else{
+						 $(".world_tbody_a").append('<tr class="tr2">'+
+							'<td>'+data[i]["mdate"]+' &nbsp &nbsp '+data[i]["mtime"]+'</td>'+
+							'<td><span class="main">'+data[i]["mtname"]+'</span><em>0-0</em><span class="pass">'+data[i]["dtname"]+'</span></td>'+
+							'<td>0</td>'+
+							'<td>0</td>'+
+							'<td><span class="sheng">0</span><span class="ping">0</span><span class="fu">0</span></td>'+
+							'<td class="last"><span>析</span><span>亚</span><span>欧</span><span>大</span></td>'+
+							'</tr>')
+						}
+						 }
+				 }
+  	    	});
+  	    });
+
+
+  	    $(function(){
+  	    	$(".world_group > h4").click(function(){
+  	    		var index = $(this).index();
+				$(this).addClass("world_group_one").siblings().removeClass("world_group_one");
+				$(".world_con").eq(index).addClass("world_show").siblings().removeClass("world_show");
+  	    	});
+  	    });
+	</script>
+</body>
+</html>
